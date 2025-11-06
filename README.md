@@ -2,13 +2,6 @@
 
 **Équipe** : Marwan GHRAIRI & Khalil JAOUANI
 
-## App live
-
-Front : https://hackathon-ipssi.vercel.app/
-Back : http://ipssihackathon.eu-4.evennode.com/games
-
-Il faut payer pour etre en SSL sur le Back, donc pas possible ici, et nous n'avions plus de credits azure, mais tout fonctionne normalement indépendemment.
-
 ## Notebooks
 
 ### Deeplearning
@@ -56,20 +49,4 @@ python main.py
 ```
 
 L'API est accessible sur `http://localhost:8080/`.
-
-### Routes API
-
-- `/games` : Renvoie la liste des jeux olympiques
-- `/predict` : Renvoie la prédiction des prochaines médailles gagnées selon les statistiques en input
-  - example body :
-  ```json
-   "sports": 43,
-   "epreuves": 234,
-   "game_part": 27,
-   "prec_game_medal": 113,
-   "prec_game_gold": 39,
-   "prec_game_silver": 41,
-   "prec_game_bronze": 33
-  ```
-- `/results` : Renvoie la liste des résultats des jeux olympiques avec un système de pagination
 
